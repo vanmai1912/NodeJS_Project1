@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "watch": "node-sass --watch src/scss/ --output src/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VanMai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  }
+}
