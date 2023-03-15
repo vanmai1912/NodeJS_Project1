@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const hbs = require('express-handlebars');
-
+const route = require('./src/routes')
 
 const app = express();
 
@@ -26,12 +26,7 @@ app.set('view engine', 'handlebars');
 
 app.set('views', path.join(__dirname,'src/views'))
 
-app.get('/', function (req, res) {
-  res.render('home');
-})
 
-app.get('/news', function (req, res) {
-    res.render('news');
-  })
+//routes init
+route(app);
 
-app.listen(3000)
